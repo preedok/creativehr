@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Login from "../views/auth/login";
 import Dashboard from "../views/admin/dashboard/dashboard";
+import Materi from "../views/admin/materi/materi";
 import Layout from "../layout/layout";
 import Search from '../views/admin/search/search'
 
@@ -35,7 +36,6 @@ const Auth = ({ children }) => {
     }
     return children;
 };
-const token = localStorage.getItem("token");
 const Router = () => {
     return (
         <BrowserRouter>
@@ -51,6 +51,9 @@ const Router = () => {
                     {/* <Route path="/dashboard" element={<Layout />}>
                         <Route index element={<Auth><Dashboard /></Auth>} />
                     </Route> */}
+                    <Route path="/materi" element={<Layout />}>
+                        <Route index element={<Materi />} />
+                    </Route>
                     {/* <Route
                         path="/"
                         element={token ? <Navigate to="/dashboard" replace /> : <Navigate to="/login" replace />}

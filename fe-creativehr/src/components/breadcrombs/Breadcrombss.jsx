@@ -10,7 +10,7 @@ const Breadcrombss = ({ menu, submenu }) => {
     }
     const navigate = useNavigate();
     return (
-        <div className='bg-[#ffffff] px-5 w-full py-1 rounded-sm' style={{ borderBottomLeftRadius: '18px', borderLeft: '5px solid #0F2167', borderRight: '5px solid #0F2167' }}>
+        <div className='bg-[#ffffff] px-5 mx-2 w-[98%] py-1 rounded-sm' style={{ borderBottomLeftRadius: '18px', borderLeft: '5px solid #0F2167', borderRight: '5px solid #0F2167' }}>
             <h1 className='text-[#0F2167]' style={{ fontWeight: '600', fontSize: '25px' }}>{menu}</h1>
             <div role="presentation" className='my-3' onClick={handleClick}>
                 <Breadcrumbs aria-label="breadcrumb">
